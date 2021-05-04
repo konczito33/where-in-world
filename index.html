@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where in world?</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__h1"><a href="index.html">Where in world?</a></h1>
+        <button class="header__darkmode"><span class="far fa-moon"></span> Dark Mode</button>
+    </header>
+    <nav class="nav">
+        <div class="nav__search-c">
+            <span class="fas fa-search"></span>
+            <input class="search" placeholder=" " autocomplete="off" type="search" name="search">
+            <label class="search-label" for="search">Search for a country...</label>
+        </div>
+        <button class="nav__dropdown dropdown">
+            <span class="dropdown__text">Filter by Region</span> <span class="fas fa-chevron-down"></span>
+            <ul class="dropdown__list">
+                <li data-region="All" class="dropdown__item">All</li>
+                <li data-region="Africa" class="dropdown__item">Africa</li>
+                <li data-region="Americas" class="dropdown__item">Americas</li>
+                <li data-region="Asia" class="dropdown__item">Asia</li>
+                <li data-region="Europe" class="dropdown__item">Europe</li>
+                <li data-region="Oceania" class="dropdown__item">Oceania</li>
+            </ul>
+        </button>
+    </nav>
+    <main class="container">
+        <h2 class="container__loading">Countries loading...</h2>
+    </main>
+
+    <div class="modal">
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
