@@ -114,7 +114,7 @@ async function displayCountries(countries) {
         <div class="modal__info">
         <h4 class="modal__name"> ${name}</h4>
         <p class="modal__item"><strong>Native name: </strong>${nativeName}</p>
-        <p class="modal__item"><strong>Population: </strong> ${population}</p>
+        <p class="modal__item"><strong>Population: </strong> ${formatNumber(population)}</p>
         <p class="modal__item"><strong>Region: </strong> ${region}</p>
         <p class="modal__item"><strong>Subregion: </strong> ${subregion}</p>
         <p class="modal__item"><strong>Capital: </strong> ${capital}</p>
